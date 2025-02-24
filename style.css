@@ -63,6 +63,10 @@ a {
 
 }
 
+.news-hint {
+  color: black;
+}
+
 
 
 .news-box h3 {
@@ -899,7 +903,7 @@ button:hover {
 
 
 
-.container {
+.container_news {
   max-width: 600px;
   margin: 20px auto;
   background: white;
@@ -913,7 +917,7 @@ h1 {
   color: #333;
 }
 
-.buttons {
+.buttons_news {
   margin-bottom: 20px;
 }
 

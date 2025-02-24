@@ -74,11 +74,11 @@ $news_result = mysqli_query($conn, $news_query);
 </head>
 <body>
 <?php include 'navigation.php'; ?>
-<div class="container">
+<div class="container_news">
     <h1>News</h1>
 
     <!-- Buttons zum Wechseln der Kategorie -->
-    <div class="buttons">
+    <div class="buttons_news">
         <form method="post">
             <button type="submit" name="kategorie" value="ALLE">Alle News</button>
             <button type="submit" name="kategorie" value="ALLGEMEIN">Allgemeine News</button>
