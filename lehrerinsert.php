@@ -50,46 +50,11 @@ $teams_result = $conn->query("SELECT teams.*, stufe.stufe_name, faecher.fach_nam
 
 <!DOCTYPE html>
 <html lang="de">
+<link rel="stylesheet" href="style.css">
 <head>
     <meta charset="UTF-8">
     <title>Team Verwaltung</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <style>
-        body{
-            font-family: Arial, sans-serif; margin: 20px; background: #f4f4f4; 
-        }
-        .container_lehrerinsert{
-            display: flex; gap: 20px;
-            margin-top: 8vw; 
-        }
-        .form-container_lehrerinsert, .teams-container_lehrerinsert { 
-            width: 50%; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); 
-        }
-        h2 {
-            text-align: center; 
-        }
-        input, textarea, select, button { 
-            width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; 
-        }
-        button {
-            background: #28a745; color: white; border: none; cursor: pointer; 
-        }
-        button:hover { 
-            background: #218838; 
-        }
-        .team_lehrerinsert { 
-            padding: 10px; margin: 5px 0; border-radius: 5px; color: white; cursor: pointer; 
-        }
-        .team-content_lehrerinsert { 
-            background: white; color: black; padding: 10px; border-radius: 5px; 
-        }
-        .teams-container_lehrerinsert {
-            max-height: 425px; overflow-y: auto; 
-        }
-        #beschreibung { 
-            resize: none; 
-        }
-    </style>
 </head>
 
 <body>

@@ -72,7 +72,7 @@ $stundenplan_result = $conn->query("SELECT sl.*, t.tag_name, r.raum_bezeichnung 
 <head>
     <meta charset="UTF-8">
     <title>Stundenplan für <?php echo htmlspecialchars($team['team_name']); ?></title>
-    <link rel="stylesheet" href="style_lehrerstunden.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -152,90 +152,3 @@ $stundenplan_result = $conn->query("SELECT sl.*, t.tag_name, r.raum_bezeichnung 
 </html>
 
 <?php $conn->close(); ?>
-<style>
-    body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.container_lehrerstunden {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 50%;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.button_container_lehrerstunden {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.back_button_lehrerstunden, .delete_button_lehrerstunden, .submit_button_lehrerstunden {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.delete_button_lehrerstunden {
-    background-color: #DC3545;
-}
-
-.back_button_lehrerstunden:hover, .delete_button_lehrerstunden:hover, .submit_button_lehrerstunden:hover {
-    opacity: 0.8;
-}
-
-.form_lehrerstunden {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-label {
-    font-weight: bold;
-}
-
-select, button {
-    padding: 8px;
-    width: 80%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.table_lehrerstunden {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.table_lehrerstunden th, .table_lehrerstunden td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-}
-
-.table_lehrerstunden th {
-    background-color: #007BFF;
-    color: white;
-}
-
-.error_message_lehrerstunden {
-    color: red;
-    font-weight: bold;
-}
-</style>

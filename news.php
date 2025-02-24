@@ -68,74 +68,9 @@ $news_result = mysqli_query($conn, $news_query);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>News</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            text-align: center;
-        }
-        .container {
-            max-width: 600px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            margin-top: 7vw;
-        }
-        h1 {
-            color: #333;
-        }
-        .buttons {
-            margin-bottom: 20px;
-        }
-        .buttons button {
-            background: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            margin: 5px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .buttons button:hover {
-            background: #0056b3;
-        }
-        .news-list {
-            list-style: none;
-            padding: 0;
-        }
-        .news-list li {
-            background: #fff;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .news-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: #007bff;
-            margin-bottom: 5px;
-        }
-        .news-content {
-            font-size: 14px;
-            color: #333;
-            text-align: left;
-            margin-bottom: 5px;
-        }
-        .news-date {
-            font-size: 12px;
-            color: gray;
-            align-self: flex-end;
-        }
-    </style>
 </head>
 <body>
 <?php include 'navigation.php'; ?>
